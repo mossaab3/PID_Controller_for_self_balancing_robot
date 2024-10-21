@@ -15,7 +15,17 @@ Where:
 -  **Kd** is the derivative gain
 -  **e(t)** is the error at time \( t \)
 
-Common tuning methods for adjusting 𝐾 𝑝 K p ​ , 𝐾 𝑖 K i ​ , and 𝐾 𝑑 K d ​ include manual tuning, the Ziegler-Nichols method, and trial and error, each aiming to optimize system stability and response time.
+### Tuning the PID :
 
-### Realization of the robot :
+There are several methods to Tune the PID, manual tuning, the Ziegler-Nichols method, and trial and error, each aiming to optimize system stability and response time. 
+
+Here the method used is **The Nicolas-Ziegler Method** :
+# The Nicolas-Ziegler Method : 
+The Ziegler-Nichols method is a heuristic tuning method for PID controllers. It involves setting the integral and derivative gains to zero and increasing the proportional gain until the system reaches the ultimate gain, where the output of the system oscillates with a constant amplitude. From the oscillation period and the ultimate gain.the PID controller gains are set using predefined formulas:
+
+
+ ![Ziegler-Nicolas Method](.doc/Ziegler_Nicolas_method.png)
+
+
+### Realization of the self-balancing robot :
 ![Self Balancing Robot](.doc/self_balancing_robot.jpg)
